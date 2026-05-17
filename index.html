@@ -4,6 +4,8 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Shabnam Begum — Data Analyst Portfolio</title>
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/shabnam202003begum/shabnam-analyst.com/main/shabnam-dp.jpeg"/>
+<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/shabnam202003begum/shabnam-analyst.com/main/shabnam-dp.jpeg"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <style>
 :root {
@@ -42,8 +44,14 @@ nav{
   font-family:'Playfair Display',serif;
   font-size:20px;font-weight:900;letter-spacing:0.02em;
   color:var(--ink);text-decoration:none;
+  display:flex;align-items:center;gap:10px;
 }
 .nav-logo span{color:var(--gold);}
+.nav-photo{
+  width:36px;height:36px;border-radius:50%;
+  object-fit:cover;border:2px solid var(--gold);
+  box-shadow:0 2px 8px rgba(201,168,76,0.25);
+}
 .nav-links{display:flex;gap:36px;list-style:none;}
 .nav-links a{
   font-size:13px;font-weight:500;color:var(--muted);
@@ -111,11 +119,10 @@ h1 em{color:var(--teal);font-style:italic;}
   width:100%;max-width:380px;
 }
 .hero-avatar{
-  width:80px;height:80px;border-radius:50%;
-  background:linear-gradient(135deg,var(--teal),var(--gold));
-  display:flex;align-items:center;justify-content:center;
-  font-size:32px;margin-bottom:20px;
-  box-shadow:0 4px 20px rgba(26,107,107,0.25);
+  width:88px;height:88px;border-radius:50%;
+  object-fit:cover;margin-bottom:20px;
+  border:3px solid var(--gold);
+  box-shadow:0 4px 24px rgba(26,107,107,0.25), 0 0 0 6px rgba(201,168,76,0.1);
 }
 .hero-card h3{font-family:'Playfair Display',serif;font-size:22px;margin-bottom:4px;}
 .hero-card p{font-size:13px;color:var(--muted);margin-bottom:24px;}
@@ -312,7 +319,10 @@ footer p{font-size:12px;color:rgba(250,249,246,0.3);font-family:'DM Mono',monosp
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#">Shabnam<span>.</span></a>
+  <a class="nav-logo" href="#">
+    <img class="nav-photo" src="https://raw.githubusercontent.com/shabnam202003begum/shabnam-analyst.com/main/shabnam-dp.jpeg" alt="Shabnam Begum"/>
+    Shabnam<span>.</span>
+  </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -337,7 +347,7 @@ footer p{font-size:12px;color:rgba(250,249,246,0.3);font-family:'DM Mono',monosp
   </div>
   <div class="hero-right">
     <div class="hero-card">
-      <div class="hero-avatar">👩‍💼</div>
+      <img class="hero-avatar" src="https://raw.githubusercontent.com/shabnam202003begum/shabnam-analyst.com/main/shabnam-dp.jpeg" alt="Shabnam Begum"/>
       <h3>Shabnam Begum</h3>
       <p>Data Analyst · Bengaluru, India</p>
       <div class="skill-pills">
